@@ -18,7 +18,7 @@ public class Contact extends HttpServlet{
 		}
 		
 		@Override
-		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("Inside dopost Method Contact");
 		String name= req.getParameter("name");
 		String email=req.getParameter("email");
@@ -38,8 +38,9 @@ public class Contact extends HttpServlet{
 		}
 		else {
 			print.print("<h1 style='color:Red'>");
-			print.print("Enetred details are Invalid");
+			print.print("Entered details are Invalid");
 			print.print("</h1>");
+			print.print("<a href=\"index.html\"><input type=\"submit\" value=\" Home \" > </a>");
 		}
 }
 }

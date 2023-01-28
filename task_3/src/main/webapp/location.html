@@ -5,12 +5,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="callLocation" method="post">
-Name<input type="text" name="name"><br>
-Pin<input type="number" name="pin"><br>
-StartingPoint<input type="text" name="startingPoint"><br>
-ReachingTime<input type="number" name="reachingTime"><br>
-<input type="submit" name="Reached">
+<h1 style='color:Orange'>Enter Location Details</h1>
+<form action="callLocation" method="get">
+<table>
+<tr><td>Name</td><td><input type="text" name="name"></td></tr>
+<tr><td>Pin</td><td><input type="number" name="pin"></td></tr>
+<tr><td>StartingPoint</td><td><input type="text" name="startingPoint"></td></tr>
+<tr><td>Destination</td><td><input type="number" name="reachingTime"></td></tr>
+<tr><td><input type="submit" value="submit"></td></tr>
+<tr><td><a href="index.html"><input type="submit" value=" Home "></a></td></tr>
+</table>
 </form>
 </body>
 </html>

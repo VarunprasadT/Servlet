@@ -16,7 +16,7 @@ public class Location extends HttpServlet{
 		}
 	
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("Inside doPost method...");
 		String name=req.getParameter("name");
 		String pin=req.getParameter("pin");
@@ -42,6 +42,7 @@ public class Location extends HttpServlet{
 		print.print("<h1 style='color:Red'>");
 		print.print("The Entered data is invalid");
 		print.print("</h1>");
+		print.print("<a href=\"index.html\"><input type=\"submit\" value=\" Home \" > </a>");
 	}
 	print.print("</body>");
 	print.print("</html>");
