@@ -14,7 +14,7 @@
 <tr><td>E-mail</td><td><input type="email" name="email"></td></tr>
 <tr><td>Phone Number</td><td><input type="number" name="number"></td></tr>
 <tr><td>Enter The Password</td><td><input type="password" name="password"></td></tr>
-<tr><td>Confirm Password</td><td><input type="password" name="conPassword"></td></tr>
+<tr><td>Confirm Password</td><td><input type="password" name="confirmPassword"></td></tr>
 <tr><td><input type="submit" value="submit"></td></tr>
 </table>
 </form>
