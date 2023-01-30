@@ -38,15 +38,15 @@ public class Panda extends HttpServlet{
 		dispatcher.forward(req, resp);
 		}
 		else {
-			System.out.println("Entered Password Didn't Match");
-//			PrintWriter print = resp.getWriter();
-//			print.print("<html>");
-//			print.print("<body>");
-//			print.print("<h1 style='color:red'>");
-//			print.print("Entered details are not correct");
-//			print.print("</h1>");
-//			print.print("</body>");
-//			print.print("</html>");
+			System.out.println("Entered Details are Invalid");
+			PrintWriter print = resp.getWriter();
+			print.print("<html>");
+			print.print("<body>");
+			print.print("<h1 style='color:red'>");
+			print.print("Entered details are not correct");
+			print.print("</h1>");
+			print.print("</body>");
+			print.print("</html>");
 		}
 		
 		
