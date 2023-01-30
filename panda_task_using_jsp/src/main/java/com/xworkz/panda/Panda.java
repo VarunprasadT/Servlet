@@ -25,10 +25,10 @@ public class Panda extends HttpServlet{
 		String email= req.getParameter("email");
 		String phoneNumber = req.getParameter("number");
 		String password = req.getParameter("password");
-		String confirmPassword = req.getParameter("conPassword");
+		String confirmPassword = req.getParameter("confirmPassword");
 		
 	if(alp.contains(name.subSequence(0, 1)) &&name.length()>=5 &&password.contains("@")&& password.length()>=8 && password.contentEquals(confirmPassword)) {
-		System.out.println("Name : "+name+"\nE-mail : "+email+"\nPhone Number : "+phoneNumber+"\nPassword : "+password+"\nconfirmPassword : "+confirmPassword);
+		System.out.println("Name : "+name+"\nE-mail : "+email+"\nPhone Number : "+phoneNumber+"\npassword : "+password+"\nconfirmPassword : "+confirmPassword);
 		RequestDispatcher dispatcher=req.getRequestDispatcher("display.jsp");
 		req.setAttribute("name", name);
 		req.setAttribute("email", email);
